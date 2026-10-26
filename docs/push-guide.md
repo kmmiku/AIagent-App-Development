@@ -1,4 +1,4 @@
-# 一键上传 AIagent工程开发规范 skill 到 GitHub
+# 一键上传 AI agent应用开发规范 skill 到 GitHub
 
 仓库目录：`D:\DSH_Wrodkstation\Git_work\AIagent-Engineering-Spec`
 
@@ -10,7 +10,7 @@
 cd D:\DSH_Wrodkstation\Git_work\AIagent-Engineering-Spec
 $PAT = "YOUR_PAT"
 git -c http.proxy=http://127.0.0.1:7897 -c https.proxy=http://127.0.0.1:7897 `
-    push "https://kmmiku:$PAT@github.com/kmmiku/AIagent-Engineering-Spec.git" main
+    push "https://kmmiku:$PAT@github.com/kmmiku/AIagent-App-Development.git" main
 ```
 
 ## 说明
@@ -18,14 +18,14 @@ git -c http.proxy=http://127.0.0.1:7897 -c https.proxy=http://127.0.0.1:7897 `
 - **PAT 生成**：https://github.com/settings/tokens → Generate new token (classic) → 勾选 `repo` → 生成后立即复制（只显示一次）。
 - **代理**：本机 `github.com:443` 直连被阻断，必须走 `http://127.0.0.1:7897`。仓库已写好该代理配置。
 - **仓库不存在时**：GitHub 在首次 push 时不会自动建仓，需先在网页 https://github.com/new 创建空仓库
-  `AIagent-Engineering-Spec`（不要勾选 Add README / .gitignore / license）。
+  `AIagent-App-Development`（不要勾选 Add README / .gitignore / license）。
 - **避免泄露**：命令行带 PAT 会进入 PowerShell 历史。用完后可执行
   `Remove-Item (Get-PSReadlineOption).HistorySavePath)` 清理历史，或改用 `git credential-manager` 存储。
 
 ## 验证推送结果
 
 ```powershell
-git ls-remote "https://kmmiku:$PAT@github.com/kmmiku/AIagent-Engineering-Spec.git" main
+git ls-remote "https://kmmiku:$PAT@github.com/kmmiku/AIagent-App-Development.git" main
 ```
 
 返回一个 sha 即表示上传成功。

@@ -1,4 +1,4 @@
-# AIagent工程开发规范 · Skill
+# AI agent应用开发规范 · Skill
 
 面向 AI Agent 工程与 AI 辅助软件工程的全生命周期治理规范：一个启动配置阶段（Gate 0）加十二个治理关卡（Gate 1–12），按工程规模与风险动态选择「完整执行 / 简化执行 / 条件触发 / 关闭」。
 
@@ -21,7 +21,7 @@
 ### 第一步：获取 skill
 
 ```bash
-git clone https://github.com/kmmiku/AIagent-Engineering-Spec.git
+git clone https://github.com/kmmiku/AIagent-App-Development.git
 ```
 
 ### 第二步：安装到客户端 skills 目录
