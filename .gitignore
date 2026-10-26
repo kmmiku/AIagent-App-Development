@@ -1,0 +1,18 @@
+# 依赖与产物
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# 运行轨迹与日志
+logs/*.log
+logs/*.jsonl
+
+# 本地评测输出
+evals/out/
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
