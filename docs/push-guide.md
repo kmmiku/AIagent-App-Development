@@ -1,13 +1,13 @@
 # 一键上传 AI agent应用开发规范 skill 到 GitHub
 
-仓库目录：`D:\DSH_Wrodkstation\Git_work\AIagent-Engineering-Spec`
+仓库目录：`D:\DSH_Wrodkstation\Git_work\AIagent-App-Development`
 
 ## 使用方法
 
 把下面的 `YOUR_PAT` 换成你的 Personal Access Token（需勾选 `repo` 权限），然后执行：
 
 ```powershell
-cd D:\DSH_Wrodkstation\Git_work\AIagent-Engineering-Spec
+cd D:\DSH_Wrodkstation\Git_work\AIagent-App-Development
 $PAT = "YOUR_PAT"
 git -c http.proxy=http://127.0.0.1:7897 -c https.proxy=http://127.0.0.1:7897 `
     push "https://kmmiku:$PAT@github.com/kmmiku/AIagent-App-Development.git" main
